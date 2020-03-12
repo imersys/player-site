@@ -6,17 +6,17 @@
     <title>Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player</title>
     <link>https://imersys.github.io/player-site/</link>
     
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="/player-site/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Ime Player is a player for PC, iOS, Android, iPadOS using latest Web technologies.</description>
-    <pubDate>Thu, 12 Mar 2020 21:49:12 GMT</pubDate>
+    <pubDate>Thu, 12 Mar 2020 21:58:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>introducing-imersysdocs</title>
       <link>https://imersys.github.io/player-site/blog/introducing-imersysdocs/</link>
       <guid>https://imersys.github.io/player-site/blog/introducing-imersysdocs/</guid>
-      <pubDate>Thu, 12 Mar 2020 21:49:12 GMT</pubDate>
+      <pubDate>Thu, 12 Mar 2020 21:58:11 GMT</pubDate>
       <description>
       
       </description>
