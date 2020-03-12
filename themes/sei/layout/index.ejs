@@ -1,0 +1,46 @@
+<%- partial('partials/examples/sidebar', {site: site, page: page}) %>
+
+<div class="content content--index home-content">
+  <div class="home-center" style="text-align: center;">
+    <iframe
+    id="exampleIframe" class="example__iframe""
+    width="640" height="360"
+    src="<%= site.data.examples.home.scene_url %>"
+    allowfullscreen="yes" allowvr="yes" scrolling="no"></iframe>
+  </div>
+
+  <div id="homeContent" class="copy__wrap">
+    <img src="../images/imersys-logo-white.png" class="mobile-logo">
+    <ul class="menu">
+      <li class="menu-item">
+        <a href="<%- url_for('comunidade/') %>">Features</a>
+      </li>
+      <li class="menu-item">
+        <a href="<%- url_for('comunidade/') %>">Pricing</a>
+      </li>
+      <li class="menu-item">
+        <a href="<%- url_for('docs/introducao/') %>">Docs</a>
+      </li>
+    </ul>
+
+    <%- page.content %>
+
+    <a href="<%- url_for('docs/introducao/') %>"
+       class="get-started nav-link">
+      Get Started
+    </a>
+
+    <div id="usersContainer">
+      <p>Used by</p>
+      <ul id="users">
+        <% site.data.showcase.users.forEach(function (user, idx) { %>
+          <li class="user">
+            <a href="<%- user.url %>" title="<%- user.description %>">
+              <img src="/images/users/<%- user.company.toLowerCase().replace(/\s/g, '') %>.svg">
+            </a>
+          </li>
+        <% }); %>
+      </ul>
+    </div>
+  </div>
+</div>
