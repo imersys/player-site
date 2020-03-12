@@ -4,25 +4,25 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player</title>
-    <link>https://player-site.imersys.com/</link>
+    <link>https://imersys.github.io/player-site/</link>
     
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Ime Player is a player for PC, iOS, Android, iPadOS using latest Web technologies.</description>
-    <pubDate>Thu, 12 Mar 2020 20:12:55 GMT</pubDate>
+    <pubDate>Thu, 12 Mar 2020 21:49:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>introducing-imersysdocs</title>
-      <link>https://player-site.imersys.com/blog/introducing-imersysdocs/</link>
-      <guid>https://player-site.imersys.com/blog/introducing-imersysdocs/</guid>
-      <pubDate>Thu, 12 Mar 2020 20:12:55 GMT</pubDate>
+      <link>https://imersys.github.io/player-site/blog/introducing-imersysdocs/</link>
+      <guid>https://imersys.github.io/player-site/blog/introducing-imersysdocs/</guid>
+      <pubDate>Thu, 12 Mar 2020 21:49:12 GMT</pubDate>
       <description>
       
       </description>
       
       
-      <comments>https://player-site.imersys.com/blog/introducing-imersysdocs/#disqus_thread</comments>
+      <comments>https://imersys.github.io/player-site/blog/introducing-imersysdocs/#disqus_thread</comments>
     </item>
     
   </channel>
