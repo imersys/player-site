@@ -1,0 +1,429 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en"
+      data-is-home="false"
+      data-is-mobile="false"
+      data-supports-vr="false"
+      data-supports-touch="false"
+      data-site-base-url="https://player-site.imersys.com"
+      data-site-root-path="/"
+      data-site-home-url="https://player-site.imersys.com/"
+      data-lib-home-url="https://aframe.io/"
+      data-lib-examples-url="https://aframe.io/aframe/examples"
+      data-title="{title} | Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player"
+      data-is-spa="false"
+      data-ga-id="UA-96167875-3"
+      data-imersysdocs_version="master"
+      data-docs-version="ambia360">
+  <head>
+    <title>Adicionando vídeos ao Moodle – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player</title>
+    
+
+<script>
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === 'https://player-site.imersys.com') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
+</script>
+
+
+    <meta charset="utf-8">
+    <!-- Don't index old documentation pages. -->
+    <meta name="robots"
+      content="NOINDEX">
+    <meta name="description" content="">
+    <meta name="keywords" content="webvr,webvr framework,webvr demos,webvr sites,vr javascript,vr framework">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Origin Trial Token, feature = WebXR Device API, origin = https://aframe.io, expires = 2018-03-05 -->
+    <meta http-equiv="origin-trial" data-feature=" WebXR Device API (For Chrome M69+)" data-expires="2019-03-05" content="Ako5ueZ8LIub4MywyaWBtX6FQOVZBYPxDUBC09XfJRjVfQH1GXOaRO8v4/TQWyPdmw2qm8nJ/f9QfFwE+t20NwsAAABkeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViWFJEZXZpY2VNNjkiLCJleHBpcnkiOjE1NTE4MzAzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://aframe.io, expires = 2018-08-09 -->
+    <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
+    <link rel="canonical" href="https://player-site.imersys.com">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
+    <meta property="og:title" content="Adicionando vídeos ao Moodle – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+    <meta property="og:site_name" content="Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://player-site.imersys.com">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://player-site.imersys.com/images/card.jpg?v2">
+    <meta property="og:image:secure_url" content="https://player-site.imersys.com/images/card.jpg?v2">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@aframevr">
+    <meta name="twitter:creator" content="@aframevr">
+    <meta name="twitter:title" content="Adicionando vídeos ao Moodle – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://player-site.imersys.com/images/card.jpg?v2">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="black">
+    <link rel="icon" sizes="192x192" href="/images/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="https://player-site.imersys.com/images/imersys-logo-152.png">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="https://player-site.imersys.com/feed.xml">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96167875-3', 'auto');
+
+  ga('send', 'pageview');
+
+  ga('send', 'event', 'pageload.querystring', window.location.search);
+
+  ga('send', 'event', 'pageload.hash', window.location.hash);
+
+  ga('send', 'event', 'supports.getVRDevices', 'getVRDevices' in navigator);
+
+  ga('send', 'event', 'supports.getVRDisplays', 'getVRDisplays' in navigator);
+
+  ga('send', 'event', 'supports.WEBVRPLUS', 'WEBVRPLUS' in window);
+</script>
+
+
+    
+      
+<script src="/js/compat.js"></script>
+
+    
+
+    
+      
+<link rel="stylesheet" href="/css/secondary.css">
+
+    
+  <meta name="generator" content="Hexo 4.2.0"></head>
+
+  <body data-page-layout="docs" data-page-type="ambia360">
+    <main id="main" class="main">
+
+
+<!-- Navigation. -->
+<div class="wordmark">
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="/" title="Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+      <span class="logo__wordmark">Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player</span>
+    </a>
+  </header>
+
+  
+
+
+<input type="search" style='visibility: hidden'></input>
+
+
+</div>
+
+<aside id="sidebar" class="sidebar borderless-links">
+  
+
+<div id="secondary-nav" class="secondary-nav">
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="/" title="Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+      <span class="logo__wordmark">Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player</span>
+    </a>
+  </header>
+
+  <ul id="nav" class="nav">
+    
+      <li  class="nav-item">
+        <a href="/docs/"
+           class="nav-link nav-link-docs current nav-link-disabled"
+           
+           >
+          <span>Docs</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <div class="list">
+    
+      
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title section-title-inactive">
+        <p class="section-title-link">Introdução</p>
+      </h3>
+
+      <!-- Section links. -->
+      <ol class="subnav section-subnav">
+        
+          <li class="subnav-item ">
+            <a href="/docs/introducao/"
+               class="subnav-link">
+              Sobre o Docs
+            </a>
+          </li>
+        
+      </ol>
+    
+      
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title section-title-active">
+        <p class="section-title-link">Ambia 360</p>
+      </h3>
+
+      <!-- Section links. -->
+      <ol class="subnav section-subnav">
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/"
+               class="subnav-link">
+              Instalando no Blackboard
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/moodle.html"
+               class="subnav-link">
+              Instalando no Moodle
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/blackboard-usage.html"
+               class="subnav-link">
+              Adicionando vídeos ao Blackboard
+            </a>
+          </li>
+        
+          <li class="subnav-item  subnav-item-current">
+            <a href="/docs/ambia360/moodle-usage.html"
+               class="subnav-link current">
+              Adicionando vídeos ao Moodle
+            </a>
+          </li>
+        
+      </ol>
+    
+      
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title section-title-inactive">
+        <p class="section-title-link">VR Player</p>
+      </h3>
+
+      <!-- Section links. -->
+      <ol class="subnav section-subnav">
+        
+          <li class="subnav-item ">
+            <a href="/docs/vrplayer/"
+               class="subnav-link">
+              Tocando vídeos 360°
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/vrplayer/offline.html"
+               class="subnav-link">
+              Assistindo videos offline
+            </a>
+          </li>
+        
+      </ol>
+    
+  </div>
+</aside>
+
+  <!-- Documentation. -->
+  <div class="content content--structured content--ambia360 copy">
+    <div class="mobile-header">
+  <a id="sidebar-toggle" href="#" title="Toggle sidebar">&equiv;</a>
+  <h1><a href="/">Player</a></h1>
+  <span></span>
+</div>
+
+<script>
+  (function() {
+    var sidebarEl = document.querySelector('#sidebar');
+    var toggleEl = document.querySelector('#sidebar-toggle');
+
+    // Open sidebar on toggle click.
+    toggleEl.addEventListener('click', function () {
+      sidebarEl.classList.add('sidebar-open');
+    });
+
+    // Close sidebar when clicking content.
+    document.body.addEventListener('click', function (evt) {
+      if (evt.target !== toggleEl && !evt.target.closest('#sidebar')) {
+        sidebarEl.classList.remove('sidebar-open');
+      }
+    });
+
+    function closest (el, selector) {
+      var matchesFn;
+      var parent;
+      // Vendor prefix.
+      ['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector',
+       'oMatchesSelector'].some(function (fn) {
+          if (typeof document.body[fn] == 'function') {
+            matchesFn = fn;
+            return true;
+          }
+          return false;
+      });
+      // Traverse parents.
+      while (el) {
+        parent = el.parentElement;
+        if (parent && parent[matchesFn](selector)) { return parent; }
+        el = parent;
+      }
+      return null;
+    }
+  })();
+</script>
+
+
+    <div class="copy__wrap">
+      <div class="page__section docs-header">
+        <p>
+          <a href="/docs/ambia360/" class="borderless-link">
+            ambia360 &rsaquo; Ambia 360
+          </a>
+        </p>
+      </div>
+      <h1 class="page__title">
+        Adicionando vídeos ao Moodle
+      </h1>
+
+      
+
+      <blockquote>
+<p>Este guia tem o objetivo de auxiliar a utilização do <strong>Ambia 360</strong> na plataforma <strong>Moodle</strong>. O guia é primariamente destinado à <strong>professores e coordenadores de instituições de ensino</strong>.</p>
+</blockquote>
+<h2 id="requisitos-tecnicos"><a href="#requisitos-tecnicos" class="headerlink" title="Requisitos Técnicos"></a>Requisitos Técnicos</h2><p>O primeiro passo para adicionar vídeos do <strong>Ambia 360</strong> é garantir que a <a href="./moodle.html">instalação do <strong>Ambia 360</strong></a> foi realizada corretamente no Moodle em sua instituição de ensino. Caso a instalação não tenha sido feita, peça auxílio ao administrador do sistema de sua instituição para que a faça antes de prosseguir neste guia.</p>
+<h2 id="guia-para-adicionar-videos"><a href="#guia-para-adicionar-videos" class="headerlink" title="Guia para adicionar vídeos"></a>Guia para adicionar vídeos</h2><h3 id="1º-passo-selecionando-um-curso-no-moodle"><a href="#1º-passo-selecionando-um-curso-no-moodle" class="headerlink" title="1º Passo: Selecionando um curso no Moodle"></a>1º Passo: Selecionando um curso no Moodle</h3><p>Como primeiro passo para adicionar um vídeo, selecione a opção <strong>Página inicial do site</strong> no menu lateral e então selecione algum curso para adicionar o <strong>Ambia 360</strong>.</p>
+<p><img src="../images/moodle/Moodle-SS5.png" alt="360&deg; Image Viewer"></p>
+<p>No exemplo da imagem utilizamos o curso “Pedagogia”, mas a princípio você pode utilizar <em>qualquer</em> curso.</p>
+<p>Na sequência, dentro do curso selecionado procure o ícone de engrenagem à direita da página e selecione a opção <strong>Ativar edição</strong>.</p>
+<p><img src="../images/moodle/Moodle-SS6.png" alt="360&deg; Image Viewer"></p>
+<p>Com o modo de edição habilitado, ainda à direita da página selecione a opção <strong>Adicionar uma atividade ou recurso</strong>.</p>
+<p><img src="../images/moodle/Moodle-SS7.png" alt="360&deg; Image Viewer"></p>
+<p>Dentro do pop-up de <strong>Adicionar uma atividade ou recurso</strong> selecione a ferramenta <strong>Ambia 360</strong> e selecione <strong>Adicionar</strong>.</p>
+<p><img src="../images/moodle/Moodle-SS8.png" alt="360&deg; Image Viewer"></p>
+<hr>
+<p><img src="../images/moodle/Moodle-SS9.png" alt="360&deg; Image Viewer"></p>
+<p>Na página seguinte, selecione a opção <strong>Mostrar mais</strong>.</p>
+<p><img src="../images/moodle/Moodle-SS10.png" alt="360&deg; Image Viewer"></p>
+<h3 id="2º-passo-copiando-o-codigo-do-video-no-catalogo"><a href="#2º-passo-copiando-o-codigo-do-video-no-catalogo" class="headerlink" title="2º Passo: Copiando o código do vídeo no Catálogo"></a>2º Passo: Copiando o código do vídeo no Catálogo</h3><p>O próximo passo para adicionar vídeos no Moodle necessita que você tenha acesso ao <a href="https://catalogo.imersys.com/" target="_blank" rel="noopener">Catálogo</a>, abrindo o site numa <em>nova aba</em> para escolher nossos vídeos você deseja adicionar ao Moodle. Se você já possui conta no site  do <a href="https://catalogo.imersys.com/" target="_blank" rel="noopener">Catálogo</a>, faça login normalmente e pule para o 3º passo. Caso contrário, guiaremos você a seguir para criar uma conta.</p>
+<h4 id="criando-uma-conta"><a href="#criando-uma-conta" class="headerlink" title="Criando uma conta"></a>Criando uma conta</h4><p>Para criar uma conta é necessário que a sua instituição  de ensino lhe forneça o <strong>Código da instituição</strong>. Se você já possui este código em mãos, prossiga com a criação de sua conta. Caso contrário, entre em contato com sua instituição - possivelmente ela já obteve este código previamente junto à Imersys.</p>
+<p>Para criar sua conta preencha todos os campos que estão presentes na imagem abaixo, lembrando de adicionar o <strong>Código da instituição</strong> correto.</p>
+<p><img src="../images/catalogo/Catalogo-SS1.png" alt="360&deg; Image Viewer"></p>
+<h4 id="utilizando-o-catalogo"><a href="#utilizando-o-catalogo" class="headerlink" title="Utilizando o Catálogo"></a>Utilizando o Catálogo</h4><p>Utilize a barra lateral do <strong>Catálogo</strong> para filtrar pelas grandes áreas ou então a barra de pesquisa superior para pesquisar textualmente um vídeo específico. Após encontrar o vídeo desejado, clique no ícone lateral como mostrado na imagem abaixo.</p>
+<p><img src="../images/catalogo/Catalogo-SS2.png" alt="360&deg; Image Viewer"></p>
+<p>Após clicar no ícone, um menu será aberto e você irá clicar no botão que se refere ao <strong>Moodle</strong> para copiar o código do vídeo.</p>
+<p><img src="../images/catalogo/Catalogo-SS3.png" alt="360&deg; Image Viewer"></p>
+<h3 id="3º-passo-adicionando-ao-moodle"><a href="#3º-passo-adicionando-ao-moodle" class="headerlink" title="3º Passo: Adicionando ao Moodle"></a>3º Passo: Adicionando ao Moodle</h3><p>Agora é necessário preencher as informações coletadas no <strong>Catálogo</strong> ao Moodle para adicionar o vídeo.</p>
+<p>Preencha o nome do vídeo e, no campo <strong>Parâmetros customizados</strong> coloque o parâmetro que foi copiado do <strong>Catálogo</strong>.</p>
+<p><img src="../images/moodle/Moodle-SS11.png" alt="360&deg; Image Viewer"></p>
+<p>Pronto! Um vídeo da coleção do <strong>Ambia 360</strong> foi adicionado com sucesso. Para assistir e interagir com o vídeo agora, vá até a página do curso em que foi adicionado e selecione o título do vídeo.</p>
+<blockquote>
+<p>Se o vídeo não carregou é possível que você tenha errado algum passo durante a <a href="./moodle.html">instalação</a> ou talvez na hora de adicionar o vídeo. Caso necessário, realize a instalação e configuração novamente.</p>
+</blockquote>
+
+
+      <!-- Previous / Next navigation. -->
+      <footer class="footer guide-links c">
+        
+          <span class="float-left">
+            <a href="/docs/ambia360/blackboard-usage.html" class="guide-link guide-link-left">← Adicionando vídeos ao Blackboard </a></span>
+        
+        
+      </footer>
+
+      <footer class="footer footnote">
+  <p>
+    Os produtos da Imersys contêm copyright e licenças proprietárias individuais. Por favor entre em contato conosco para certificar das condições antes de utilizar qualquer produto.
+  </p>
+  <p>Achou algum erro ou sugestão da documentação? <br><br> <a href="https://github.com/imersys/docs-site-content/edit/master/docs/ambia360/moodle-usage.md" class="github-file-link" target="_blank" rel="external">Faça uma sugestão de edição no GitHub</a></p>
+</footer>
+
+    </div>
+
+    <div class="secondary-sidebar">
+      
+
+<div id="table-of-contents" class="nav-list">
+  <p class="section-title docs-section-title">Conteúdo</p>
+
+  <ul class="subnav">
+    
+      <li class="subnav-item">
+        <a class="subnav-link" href="#requisitos-tecnicos">Requisitos Técnicos</a>
+
+        <!-- Nested. -->
+        
+          <ul>
+            
+          </ul>
+        
+      </li>
+    
+      <li class="subnav-item">
+        <a class="subnav-link" href="#guia-para-adicionar-videos">Guia para adicionar vídeos</a>
+
+        <!-- Nested. -->
+        
+          <ul>
+            
+              <li class="subnav-item">
+                <a class="subnav-link" href="#1º-passo-selecionando-um-curso-no-moodle">1º Passo: Selecionando um curso no Moodle</a>
+              </li>
+            
+              <li class="subnav-item">
+                <a class="subnav-link" href="#2º-passo-copiando-o-codigo-do-video-no-catalogo">2º Passo: Copiando o código do vídeo no Catálogo</a>
+              </li>
+            
+              <li class="subnav-item">
+                <a class="subnav-link" href="#3º-passo-adicionando-ao-moodle">3º Passo: Adicionando ao Moodle</a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+  </ul>
+</div>
+
+      
+
+      <div class="doc-actions">
+        <a class="docs-suggest-edit github-file-link" href="https://github.com/imersys/docs-site-content/edit/master/docs/ambia360/moodle-usage.md" target="_blank" rel="external">Editar Página</a>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+    
+      
+<script src="/js/common.js"></script>
+
+      
+      
+        
+<script src="/js/docs.js"></script>
+
+      
+    
+  </body>
+</html>

@@ -1,0 +1,246 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en"
+      data-is-home="false"
+      data-is-mobile="false"
+      data-supports-vr="false"
+      data-supports-touch="false"
+      data-site-base-url="https://player-site.imersys.com"
+      data-site-root-path="/"
+      data-site-home-url="https://player-site.imersys.com/"
+      data-lib-home-url="https://aframe.io/"
+      data-lib-examples-url="https://aframe.io/aframe/examples"
+      data-title="{title} | Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player"
+      data-is-spa="false"
+      data-ga-id="UA-96167875-3"
+      data-imersysdocs_version="master"
+      data-docs-version="vrplayer">
+  <head>
+    <title>Integrando na Web – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player</title>
+    
+
+<script>
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === 'https://player-site.imersys.com') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
+</script>
+
+
+    <meta charset="utf-8">
+    <!-- Don't index old documentation pages. -->
+    <meta name="robots"
+      content="NOINDEX">
+    <meta name="description" content="Ime Player is a player for PC, iOS, Android, iPadOS using latest Web technologies.">
+    <meta name="keywords" content="webvr,webvr framework,webvr demos,webvr sites,vr javascript,vr framework">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Origin Trial Token, feature = WebXR Device API, origin = https://aframe.io, expires = 2018-03-05 -->
+    <meta http-equiv="origin-trial" data-feature=" WebXR Device API (For Chrome M69+)" data-expires="2019-03-05" content="Ako5ueZ8LIub4MywyaWBtX6FQOVZBYPxDUBC09XfJRjVfQH1GXOaRO8v4/TQWyPdmw2qm8nJ/f9QfFwE+t20NwsAAABkeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViWFJEZXZpY2VNNjkiLCJleHBpcnkiOjE1NTE4MzAzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://aframe.io, expires = 2018-08-09 -->
+    <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
+    <link rel="canonical" href="https://player-site.imersys.com">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
+    <meta property="og:title" content="Integrando na Web – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+    <meta property="og:site_name" content="Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://player-site.imersys.com">
+    <meta property="og:description" content="Ime Player is a player for PC, iOS, Android, iPadOS using latest Web technologies.">
+    <meta property="og:image" content="http://player-site.imersys.com/images/card.jpg?v2">
+    <meta property="og:image:secure_url" content="https://player-site.imersys.com/images/card.jpg?v2">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@aframevr">
+    <meta name="twitter:creator" content="@aframevr">
+    <meta name="twitter:title" content="Integrando na Web – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+    <meta name="twitter:description" content="Ime Player is a player for PC, iOS, Android, iPadOS using latest Web technologies.">
+    <meta name="twitter:image" content="http://player-site.imersys.com/images/card.jpg?v2">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="black">
+    <link rel="icon" sizes="192x192" href="/images/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="https://player-site.imersys.com/images/imersys-logo-152.png">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="https://player-site.imersys.com/feed.xml">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96167875-3', 'auto');
+
+  ga('send', 'pageview');
+
+  ga('send', 'event', 'pageload.querystring', window.location.search);
+
+  ga('send', 'event', 'pageload.hash', window.location.hash);
+
+  ga('send', 'event', 'supports.getVRDevices', 'getVRDevices' in navigator);
+
+  ga('send', 'event', 'supports.getVRDisplays', 'getVRDisplays' in navigator);
+
+  ga('send', 'event', 'supports.WEBVRPLUS', 'WEBVRPLUS' in window);
+</script>
+
+
+    
+      
+<script src="/js/compat.js"></script>
+
+    
+
+    
+      
+<link rel="stylesheet" href="/css/secondary.css">
+
+    
+  <meta name="generator" content="Hexo 4.2.0"></head>
+
+  <body data-page-layout="page" data-page-type="">
+    <main id="main" class="main"><div class="wordmark">
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="/" title="Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+      <span class="logo__wordmark">Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player</span>
+    </a>
+  </header>
+
+  
+
+
+<input type="search" style='visibility: hidden'></input>
+
+
+</div>
+
+<aside id="sidebar" class="sidebar borderless-links">
+  
+
+<div id="secondary-nav" class="secondary-nav">
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="/" title="Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+      <span class="logo__wordmark">Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player</span>
+    </a>
+  </header>
+
+  <ul id="nav" class="nav">
+    
+      <li  class="nav-item">
+        <a href="/docs/"
+           class="nav-link nav-link-docs current nav-link-disabled"
+           
+           >
+          <span>Docs</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+</aside>
+
+<div class="content content--structured content-- copy">
+  <div class="mobile-header">
+  <a id="sidebar-toggle" href="#" title="Toggle sidebar">&equiv;</a>
+  <h1><a href="/">Player</a></h1>
+  <span></span>
+</div>
+
+<script>
+  (function() {
+    var sidebarEl = document.querySelector('#sidebar');
+    var toggleEl = document.querySelector('#sidebar-toggle');
+
+    // Open sidebar on toggle click.
+    toggleEl.addEventListener('click', function () {
+      sidebarEl.classList.add('sidebar-open');
+    });
+
+    // Close sidebar when clicking content.
+    document.body.addEventListener('click', function (evt) {
+      if (evt.target !== toggleEl && !evt.target.closest('#sidebar')) {
+        sidebarEl.classList.remove('sidebar-open');
+      }
+    });
+
+    function closest (el, selector) {
+      var matchesFn;
+      var parent;
+      // Vendor prefix.
+      ['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector',
+       'oMatchesSelector'].some(function (fn) {
+          if (typeof document.body[fn] == 'function') {
+            matchesFn = fn;
+            return true;
+          }
+          return false;
+      });
+      // Traverse parents.
+      while (el) {
+        parent = el.parentElement;
+        if (parent && parent[matchesFn](selector)) { return parent; }
+        el = parent;
+      }
+      return null;
+    }
+  })();
+</script>
+
+
+  <div class="copy__wrap">
+    <h1 class="page__title">Integrando na Web</h1>
+
+    <p>Esse guia tem como objetivo auxiliar na integração do <strong>VR Player</strong>  em uma <strong>página</strong> ou <strong>aplicativo Web</strong>. Esse guia é primariamente destinado à <strong>administradores de sistemas</strong> e o conhecimento básico de HTML é um requisito necessário.</p>
+<h2 id="iniciando-a-integracao"><a href="#iniciando-a-integracao" class="headerlink" title="Iniciando a integração"></a>Iniciando a integração</h2><p>Para integrar o VR Player, você deverá criar um arquivo .html e incluir o seguinte trecho <code>iframe</code> dentro do <code>&lt;body&gt;</code>:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"640"</span> <span class="attr">height</span>=<span class="string">"360"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">src</span>=<span class="string">"https://player.imersys.com/video/366335646"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Uma característica importante do VR Player é que a integração ocorre sem a necessidade de instalações. Ou seja, uma vez você aplique o trecho de código a cima em seu aplicativo ou página Web a visualização será a seguinte:</p>
+<iframe src="https://player.imersys.com/video/366335646"
+        width="640" height="360"
+        scrolling="no" frameborder="0">
+</iframe>
+
+<h2 id="configuracao"><a href="#configuracao" class="headerlink" title="Configuração"></a>Configuração</h2><h3 id="fullscreen"><a href="#fullscreen" class="headerlink" title="Fullscreen"></a>Fullscreen</h3><p>Os navegadores não permitem que iframes fiquem fullscreen por padrão. Para permitir isso, portanto, o iframe precisa explicitamente a opção <code>allowfullscreen</code> (e para uma compatibilidade ainda maior com outros navegadores os desenvolvedores recomendam a prática de adicionar também as opções <code>webkitallowfullscreen</code> e <code>mozallowfullscreen</code>). Exemplo:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">allowfullscreen</span> <span class="attr">webkitallowfullscreen</span> <span class="attr">mozallowfullscreen</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">"640"</span> <span class="attr">height</span>=<span class="string">"360"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">src</span>=<span class="string">"https://player.imersys.com/video/366335646"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">allow</span>=<span class="string">"vr,gyroscope,accelerometer,fullscreen"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="chaves-de-autenticacao"><a href="#chaves-de-autenticacao" class="headerlink" title="Chaves de autenticação"></a>Chaves de autenticação</h3><p>Em breve…</p>
+
+
+    
+
+    <footer class="footer footnote">
+  <p>
+    Os produtos da Imersys contêm copyright e licenças proprietárias individuais. Por favor entre em contato conosco para certificar das condições antes de utilizar qualquer produto.
+  </p>
+  <p>Achou algum erro ou sugestão da documentação? <br><br> <a href="https://github.com/imersys/docs-site-content/edit/master/docs/vrplayer/integrating.md" class="github-file-link" target="_blank" rel="external">Faça uma sugestão de edição no GitHub</a></p>
+</footer>
+
+  </div>
+
+    
+</div>
+</main>
+
+    
+      
+<script src="/js/common.js"></script>
+
+      
+      
+        
+<script src="/js/docs.js"></script>
+
+      
+    
+  </body>
+</html>
