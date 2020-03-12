@@ -14,7 +14,7 @@ force_https: false
 aframe_lib:
   home_url: http://localhost:9000
   examples_url: http://localhost:9000/examples
-  prod_home_url: https://aframe.io
+  prod_home_url: https://imeplayer.imersys.com
   prod_examples_url: https://aframe.io/aframe/examples
 
 css_minifier:

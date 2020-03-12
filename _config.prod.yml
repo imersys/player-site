@@ -126,12 +126,8 @@ github:
 
 
 aframe_lib:
-  home_url: https://aframe.io/
+  home_url: https://imeplayer.imersys.com
   examples_url: https://aframe.io/aframe/examples
-
-slack:
-  aframe:
-    signup_url: https://aframe.io/slack-invite/
 
 stack_overflow:
   aframe:
