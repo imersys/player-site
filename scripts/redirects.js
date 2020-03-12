@@ -20,9 +20,6 @@ hexo.extend.generator.register('community-short-url-redirects', function () {
 
     ['twitter/', hexo.config.twitter.url],
 
-    ['slack/', hexo.config.slack.aframe.signup_url],
-    ['chat/', hexo.config.slack.aframe.signup_url],
-
     ['stack-overflow/', hexo.config.stack_overflow.aframe.url],
     ['stackoverflow/', hexo.config.stack_overflow.aframe.url],
     ['help/', hexo.config.stack_overflow.aframe.url],

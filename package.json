@@ -1,7 +1,6 @@
 {
-  "name": "docs-site",
+  "name": "player-site",
   "version": "0.0.1",
-  "private": true,
   "dependencies": {
     "chalk": "^1.1.3",
     "cheerio": "^0.20.0",
