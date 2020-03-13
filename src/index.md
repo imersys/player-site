@@ -9,5 +9,5 @@ layout: index
 </h1>
 
 <div class="intro">
-  <p>For the PC, iOS, Android, iPadOS and others using the latest Web standards</p>
+  <p>For PC, iOS, Android, iPadOS and others using the latest Web standards</p>
 </div>
