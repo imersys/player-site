@@ -27,9 +27,9 @@
       data-is-spa="false"
       data-ga-id="UA-96167875-3"
       data-imersysdocs_version="master"
-      data-docs-version="ambia360">
+      data-docs-version="imeplayer">
   <head>
-    <title>Instalando no Moodle – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player</title>
+    <title>Integrando na Web – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player</title>
     
 
 <script>
@@ -54,7 +54,7 @@
     <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
     <link rel="canonical" href="https://imeplayer.imersys.com">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
-    <meta property="og:title" content="Instalando no Moodle – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+    <meta property="og:title" content="Integrando na Web – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
     <meta property="og:site_name" content="Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://imeplayer.imersys.com">
@@ -64,7 +64,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@aframevr">
     <meta name="twitter:creator" content="@aframevr">
-    <meta name="twitter:title" content="Instalando no Moodle – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
+    <meta name="twitter:title" content="Integrando na Web – Video player for PC, iOS, Android, iPadOS using latest Web technologies | Ime Player">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="http://imeplayer.imersys.com/images/card.jpg?v2">
     <meta name="mobile-web-app-capable" content="yes">
@@ -109,7 +109,7 @@
     
   <meta name="generator" content="Hexo 4.2.1"></head>
 
-  <body data-page-layout="docs" data-page-type="ambia360">
+  <body data-page-layout="docs" data-page-type="imeplayer">
     <main id="main" class="main">
 
 
@@ -178,7 +178,7 @@
       
 
       <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-active">
+      <h3 class="section-title docs-section-title section-title-inactive">
         <p class="section-title-link">Ambia 360</p>
       </h3>
 
@@ -192,9 +192,9 @@
             </a>
           </li>
         
-          <li class="subnav-item  subnav-item-current">
+          <li class="subnav-item ">
             <a href="/docs/ambia360/moodle.html"
-               class="subnav-link current">
+               class="subnav-link">
               Instalando no Moodle
             </a>
           </li>
@@ -225,7 +225,7 @@
       
 
       <!-- Section title. -->
-      <h3 class="section-title docs-section-title section-title-inactive">
+      <h3 class="section-title docs-section-title section-title-active">
         <p class="section-title-link">Ime Player</p>
       </h3>
 
@@ -239,9 +239,9 @@
             </a>
           </li>
         
-          <li class="subnav-item ">
+          <li class="subnav-item  subnav-item-current">
             <a href="/docs/imeplayer/integrating.html"
-               class="subnav-link">
+               class="subnav-link current">
               Integrando na Web
             </a>
           </li>
@@ -259,7 +259,7 @@
 </aside>
 
   <!-- Documentation. -->
-  <div class="content content--structured content--ambia360 copy">
+  <div class="content content--structured content--imeplayer copy">
     <div class="mobile-header">
   <a id="sidebar-toggle" href="#" title="Toggle sidebar">&equiv;</a>
   <h1><a href="/">Player</a></h1>
@@ -310,59 +310,48 @@
     <div class="copy__wrap">
       <div class="page__section docs-header">
         <p>
-          <a href="/docs/ambia360/" class="borderless-link">
-            ambia360 &rsaquo; Ambia 360
+          <a href="/docs/imeplayer/" class="borderless-link">
+            imeplayer &rsaquo; Ime Player
           </a>
         </p>
       </div>
       <h1 class="page__title">
-        Instalando no Moodle
+        Integrando na Web
       </h1>
 
       
 
       <blockquote>
-<p>Este guia tem o objetivo de auxiliar a instalação do <strong>Ambia 360</strong> na plataforma <strong>Moodle</strong>. O guia é primariamente destinado à <strong>administradores de sistemas</strong>.</p>
+<p>Esse guia tem como objetivo auxiliar na integração do <strong>Ime Player</strong>  em uma <strong>página</strong> ou <strong>aplicativo Web</strong>. Esse guia é primariamente destinado à <strong>administradores de sistemas</strong> e o conhecimento básico de HTML e CSS é um requisito.</p>
 </blockquote>
-<h2 id="requisitos-tecnicos"><a href="#requisitos-tecnicos" class="headerlink" title="Requisitos Técnicos"></a>Requisitos Técnicos</h2><p>A seguir são listados os requisitos técnicos necessários para realizar a instalação  do <strong>Ambia 360</strong>:</p>
-<ol>
-<li>Um <strong>ambiente Moodle</strong> configurado com acesso de <strong>administrador</strong></li>
-<li>A <strong>URL da ferramenta</strong> (fornecido pela Imersys por e-mail)</li>
-<li>A <strong>Chave do consumidor</strong> (fornecida pela Imersys por e-mail)</li>
-<li>O <strong>Segredo compartilhado</strong> (fornecida pela Imersys por e-mail)</li>
-</ol>
-<blockquote>
-<p>A <strong>Chave do consumidor</strong> e a <strong>Chave de segredo</strong> são de uso exclusivo de sua instituição. Portanto, se você pretende utilizar mais de uma instalação, solicite à Imersys novas chaves.</p>
-</blockquote>
-<h2 id="guia-de-instalacao"><a href="#guia-de-instalacao" class="headerlink" title="Guia de Instalação"></a>Guia de Instalação</h2><h3 id="1º-passo-acessando-a-area-de-administracao"><a href="#1º-passo-acessando-a-area-de-administracao" class="headerlink" title="1º Passo: Acessando a área de Administração"></a>1º Passo: Acessando a área de Administração</h3><p>Se sua instituição satifaz todos os requisitos técnicos da seção anterior, o primeiro passo para iniciar a instalação da ferramenta é ir até a área de <strong>Administração do site</strong>.</p>
-<p><img src="../images/moodle/Moodle-SS1.png" alt="360&deg; Image Viewer"></p>
-<blockquote>
-<p>Se você não tem acesso à essa área, peça ao administrador do Moodle  de sua instituição para que instale esta ferramenta para você ou peça para que ele lhe conceda acesso.</p>
-</blockquote>
-<!--toc-->
+<h2 id="iniciando-a-integracao"><a href="#iniciando-a-integracao" class="headerlink" title="Iniciando a integração"></a>Iniciando a integração</h2><p>Para integrar o Ime Player em seu html, você deverá incluir o seguinte trecho dentro do <code>&lt;body&gt;</code>:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span></span></span><br><span class="line"><span class="tag">  <span class="attr">id</span>=<span class="string">"player"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"360"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">style</span>=<span class="string">"border: 0"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">allow</span>=<span class="string">"xr-spatial-tracking,gyroscope,accelerometer,fullscreen"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://player.imersys.com/video/366335646"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Pronto! Uma característica importante do Ime Player é que a integração ocorre sem a necessidade de instalações. Ou seja, uma vez você aplique o trecho de código a cima em seu aplicativo ou página Web a visualização será a seguinte:</p>
+<iframe
+      id="player"
+      width="100%" height="360"
+      style="border: 0"
+      allow="xr-spatial-tracking,gyroscope,accelerometer,fullscreen"
+      src="https://player.imersys.com/video/366335646">
+</iframe>
 
-<h3 id="2º-passo-encontrando-o-local-de-instalacao"><a href="#2º-passo-encontrando-o-local-de-instalacao" class="headerlink" title="2º Passo: Encontrando o local de instalação"></a>2º Passo: Encontrando o local de instalação</h3><p>Dentro da área de <strong>Administração do site</strong> na plataforma Moodle, selecione a aba <strong>Plugins</strong> e na seção de <strong>Atividades</strong> a opção <strong>Gerenciar ferramentas</strong>.</p>
-<p><img src="../images/moodle/Moodle-SS2.png" alt="360&deg; Image Viewer"></p>
-<p> Dentro da página de <strong>Gerenciar ferramentas</strong> selecione a opção <strong>Conﬁgurar uma ferramenta manualmente</strong>.</p>
-<p><img src="../images/moodle/Moodle-SS3.png" alt="360&deg; Image Viewer"></p>
-<h3 id="3º-passo-configurando-a-ferramenta"><a href="#3º-passo-configurando-a-ferramenta" class="headerlink" title="3º Passo: Configurando a ferramenta"></a>3º Passo: Configurando a ferramenta</h3><p>Agora dentro da página de <strong>Configurações da ferramenta</strong>, além de preencher “Ambia 360” como o nome para a ferramenta, você irá utilizar os dados fornecidos pela Imersys para preencher os campos da <strong>URL da ferramenta</strong>, <strong>Chave do consumidor</strong> e <strong>Segredo compartilhado</strong>.</p>
-<p>Feito isso, na caixa <strong>Uso da configuração de ferramenta</strong>, selecione a opção <strong>Mostrar no seletor de atividades como uma ferramenta pré-configurada</strong>.</p>
-<p><img src="../images/moodle/Moodle-SS4.png" alt="360&deg; Image Viewer"></p>
-<blockquote>
-<p>Nós recomendamos que o nome “Ambia 360” seja utilizado durante a instalação para facilitar o acesso e uso da ferramenta.</p>
-</blockquote>
-<h2 id="testando-a-instalacao"><a href="#testando-a-instalacao" class="headerlink" title="Testando a Instalação"></a>Testando a Instalação</h2><p>Após finalizar todos os procedimentos do <a href="#guia-de-instalacao">Guia de Instalação</a>, recomendamos que faça um teste <a href="./moodle-usage.html">adicionando vídeos do <strong>Ambia 360</strong> no seu Moodle</a>.</p>
+<h2 id="configuracao"><a href="#configuracao" class="headerlink" title="Configuração"></a>Configuração</h2><h3 id="fullscreen"><a href="#fullscreen" class="headerlink" title="Fullscreen"></a>Fullscreen</h3><p>Uma característica importante nos vídeos 360 graus é a visualização imersiva, mesmo quando não utilizado um headset de Realidade Virtual. Então muito provavelmente você vai querer integrar o Ime Player em sua aplicação cobrindo toda tela do seu dispositivo no modo fullscreen. Para isso será necessário definir alguns parâmetros na folhas de estilos CSS. Por exemplo:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    body &#123;</span><br><span class="line">      overflow: hidden;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.player</span> &#123;</span></span><br><span class="line">      position: absolute;</span><br><span class="line">      border: 0;</span><br><span class="line">      top: 0;</span><br><span class="line">      left: 0;</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">iframe</span></span></span><br><span class="line"><span class="tag">    <span class="attr">id</span>=<span class="string">"player"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">class</span>=<span class="string">"player"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">height</span>=<span class="string">"100%"</span> <span class="attr">width</span>=<span class="string">"100%"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">allow</span>=<span class="string">"xr-spatial-tracking,gyroscope,accelerometer,fullscreen"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">"https://player.imersys.com/video/366335646"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="mobile-android-ios"><a href="#mobile-android-ios" class="headerlink" title="Mobile (Android, iOS)"></a>Mobile (Android, iOS)</h3><p>Outra característica desejada é a visualização de vídeos nos dispositivos mobile. Então não se esqueça também de adicionar o parâmetro <code>meta</code> dentro do <code>&lt;head&gt;</code> (para que a visualização seja na escala compatível com o tamanho da tela do seu dispositivo) e o script <code>imeplayer-embed</code>.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    body &#123;</span><br><span class="line">      overflow: hidden;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.player</span> &#123;</span></span><br><span class="line">      position: absolute;</span><br><span class="line">      border: 0;</span><br><span class="line">      top: 0;</span><br><span class="line">      left: 0;</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">iframe</span></span></span><br><span class="line"><span class="tag">    <span class="attr">id</span>=<span class="string">"player"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">class</span>=<span class="string">"player"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">height</span>=<span class="string">"100%"</span> <span class="attr">width</span>=<span class="string">"100%"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">allow</span>=<span class="string">"xr-spatial-tracking,gyroscope,accelerometer,fullscreen"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">"https://player.imersys.com/video/366335646"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">"//unpkg.com/imeplayer-embed@latest/dist/embed.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="chaves-de-autenticacao"><a href="#chaves-de-autenticacao" class="headerlink" title="Chaves de autenticação"></a>Chaves de autenticação</h3><p>Em breve…</p>
+<h2 id="agora-e-com-voce"><a href="#agora-e-com-voce" class="headerlink" title="Agora é com você!"></a>Agora é com você!</h2><p>Qualquer dúvidas que você tenha na integração, a equipe da Imersys estará super disposta a ajudar. Envie um e-mail para <a href="mailto:suporte@imersys.com">suporte@imersys.com</a>.</p>
 
 
       <!-- Previous / Next navigation. -->
       <footer class="footer guide-links c">
         
           <span class="float-left">
-            <a href="/docs/ambia360/" class="guide-link guide-link-left">← Instalando no Blackboard </a></span>
+            <a href="/docs/imeplayer/" class="guide-link guide-link-left">← Tocando vídeos 360° </a></span>
         
         
           <span class="float-right">
-            <a href="/docs/ambia360/catalogo.html" class="guide-link guide-link-right">Acessando o Catálogo Ambia →</a></span>
+            <a href="/docs/imeplayer/offline.html" class="guide-link guide-link-right">Assistindo videos offline →</a></span>
         
       </footer>
 
@@ -370,7 +359,7 @@
   <p>
     Os produtos da Imersys contêm copyright e licenças proprietárias individuais. Por favor entre em contato conosco para certificar das condições antes de utilizar qualquer produto.
   </p>
-  <p>Achou algum erro ou sugestão da documentação? <br><br> <a href="https://github.com/imersys/docs-site-content/edit/master/docs/ambia360/moodle.md" class="github-file-link" target="_blank" rel="external">Faça uma sugestão de edição no GitHub</a></p>
+  <p>Achou algum erro ou sugestão da documentação? <br><br> <a href="https://github.com/imersys/docs-site-content/edit/master/docs/imeplayer/integrating.md" class="github-file-link" target="_blank" rel="external">Faça uma sugestão de edição no GitHub</a></p>
 </footer>
 
     </div>
@@ -384,7 +373,7 @@
   <ul class="subnav">
     
       <li class="subnav-item">
-        <a class="subnav-link" href="#requisitos-tecnicos">Requisitos Técnicos</a>
+        <a class="subnav-link" href="#iniciando-a-integracao">Iniciando a integração</a>
 
         <!-- Nested. -->
         
@@ -395,22 +384,22 @@
       </li>
     
       <li class="subnav-item">
-        <a class="subnav-link" href="#guia-de-instalacao">Guia de Instalação</a>
+        <a class="subnav-link" href="#configuracao">Configuração</a>
 
         <!-- Nested. -->
         
           <ul>
             
               <li class="subnav-item">
-                <a class="subnav-link" href="#1º-passo-acessando-a-area-de-administracao">1º Passo: Acessando a área de Administração</a>
+                <a class="subnav-link" href="#fullscreen">Fullscreen</a>
               </li>
             
               <li class="subnav-item">
-                <a class="subnav-link" href="#2º-passo-encontrando-o-local-de-instalacao">2º Passo: Encontrando o local de instalação</a>
+                <a class="subnav-link" href="#mobile-android-ios">Mobile (Android, iOS)</a>
               </li>
             
               <li class="subnav-item">
-                <a class="subnav-link" href="#3º-passo-configurando-a-ferramenta">3º Passo: Configurando a ferramenta</a>
+                <a class="subnav-link" href="#chaves-de-autenticacao">Chaves de autenticação</a>
               </li>
             
           </ul>
@@ -418,7 +407,7 @@
       </li>
     
       <li class="subnav-item">
-        <a class="subnav-link" href="#testando-a-instalacao">Testando a Instalação</a>
+        <a class="subnav-link" href="#agora-e-com-voce">Agora é com você!</a>
 
         <!-- Nested. -->
         
@@ -434,7 +423,7 @@
       
 
       <div class="doc-actions">
-        <a class="docs-suggest-edit github-file-link" href="https://github.com/imersys/docs-site-content/edit/master/docs/ambia360/moodle.md" target="_blank" rel="external">Editar Página</a>
+        <a class="docs-suggest-edit github-file-link" href="https://github.com/imersys/docs-site-content/edit/master/docs/imeplayer/integrating.md" target="_blank" rel="external">Editar Página</a>
       </div>
     </div>
   </div>
