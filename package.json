@@ -21,7 +21,7 @@
     "hexo-server": "0.2.0",
     "js-yaml": "^3.13.1",
     "moment": "^2.24.0",
-    "npm": "^6.11.3",
+    "npm": "^6.14.6",
     "request": "^2.88.0",
     "striptags": "^2.1.1",
     "urljoin.js": "^0.1.0"
